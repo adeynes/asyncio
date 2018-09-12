@@ -1,0 +1,10 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/adeynes/asyncio
+branches:
+- master
+
+projects:
+  asyncio:
+    path: ""
+    model: virion
+    type: library
+...
