@@ -30,13 +30,13 @@ class FileWriteAsyncTask extends AsyncIOTask
             return;
         }
 
-        $this->setSuccess((bool) fwrite($handle, $this->message));
+        $this->setSuccess(fwrite($handle, $this->message) === false ?: true);
         fclose($handle);
     }
 
     protected function checkSuccess(Server $server): void
     {
-        if ($this->success) {
+        if (!$this->success) {
             $server->getLogger()->error("Unable to write to file {$this->file}");
         } else {
             $server->getLogger()->debug("Wrote to file {$this->file}");

@@ -24,7 +24,7 @@ class FileMoveAsyncTask extends AsyncIOTask
 
     protected function checkSuccess(Server $server): void
     {
-        if ($this->success) {
+        if (!$this->success) {
             $server->getLogger()->error("Unable to move file {$this->file} to {$this->new_file}");
         } else {
             $server->getLogger()->debug("Moved file {$this->file} to {$this->new_file}");

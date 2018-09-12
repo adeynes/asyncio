@@ -20,7 +20,7 @@ class FileTouchAsyncTask extends AsyncIOTask
 
     protected function checkSuccess(Server $server): void
     {
-        if ($this->success) {
+        if (!$this->success) {
             $server->getLogger()->error("Unable to touch file {$this->file}");
         } else {
             $server->getLogger()->debug("Touched file {$this->file}");

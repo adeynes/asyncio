@@ -15,7 +15,7 @@ class FileDeleteAsyncTask extends AsyncIOTask
 
     protected function checkSuccess(Server $server): void
     {
-        if ($this->success) {
+        if (!$this->success) {
             $server->getLogger()->error("Unable to delete file {$this->file}");
         } else {
             $server->getLogger()->debug("Deleted file {$this->file}");

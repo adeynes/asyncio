@@ -24,7 +24,7 @@ class FileCopyAsyncTask extends AsyncIOTask
 
     protected function checkSuccess(Server $server): void
     {
-        if ($this->success) {
+        if (!$this->success) {
             $server->getLogger()->error("Unable to copy file {$this->file} to {$this->destination}");
         } else {
             $server->getLogger()->debug("Copied file {$this->file} to {$this->destination}");
