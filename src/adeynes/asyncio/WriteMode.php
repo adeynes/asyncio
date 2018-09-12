@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace adeynes\asyncio;
 
-use adeynes\cucumber\utils\ds\Enum;
+use adeynes\asyncio\utils\ds\Enum;
 
 /**
  * @method static self WRITE()

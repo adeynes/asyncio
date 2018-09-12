@@ -4,7 +4,7 @@ declare(strict_types=1);
  * @link    http://github.com/myclabs/php-enum
  * @license http://www.opensource.org/licenses/mit-license.php MIT (see the LICENSE file)
  */
-namespace adeynes\cucumber\utils\ds;
+namespace adeynes\asyncio\utils\ds;
 
 /**
  * @author Matthieu Napoli <matthieu@mnapoli.fr>
