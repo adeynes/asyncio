@@ -10,16 +10,16 @@ abstract class AsyncIOTask extends AsyncTask
 {
 
     /** @var bool */
-    protected $success = false;
+    protected bool $success = false;
 
     public function setSuccess(bool $success): void
     {
         $this->success = $success;
     }
 
-    public function onCompletion(Server $server): void
+    public function onCompletion(): void
     {
-        $this->checkSuccess($server);
+        $this->checkSuccess(Server::getInstance());
     }
 
     abstract protected function checkSuccess(Server $server): void;

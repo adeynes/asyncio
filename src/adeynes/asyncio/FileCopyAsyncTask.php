@@ -9,7 +9,7 @@ class FileCopyAsyncTask extends FileOperationTask
 {
 
     /** @var string */
-    protected $destination;
+    protected string $destination;
 
     public function __construct(string $file, string $destination)
     {
