@@ -1,6 +1,6 @@
 name: asyncio
 antigen: adeynes\asyncio
-version: 0.2.0
-api: 3.0.0
+version: 1.0.0
+api: 4.0.0
 author: adeynes
 description: A virion to easily handle I/O asynchronously

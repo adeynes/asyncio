@@ -9,7 +9,7 @@ class FileMoveAsyncTask extends FileOperationTask
 {
 
     /** @var string */
-    protected $new_file;
+    protected string $new_file;
 
     public function __construct(string $file, string $new_file)
     {

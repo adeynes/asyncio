@@ -9,10 +9,10 @@ class FileWriteAsyncTask extends FileOperationTask
 {
 
     /** @var string */
-    protected $message;
+    protected string $message;
 
     /** @var WriteMode */
-    protected $mode;
+    protected WriteMode $mode;
 
     public function __construct(string $file, string $message, WriteMode $mode)
     {

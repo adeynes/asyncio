@@ -9,7 +9,7 @@ class DirectoryMoveAsyncTask extends DirectoryOperationTask
 {
 
     /** @var string */
-    protected $new_directory;
+    protected string $new_directory;
 
     public function __construct(string $directory, string $new_directory)
     {

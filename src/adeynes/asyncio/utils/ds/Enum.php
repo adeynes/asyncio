@@ -98,7 +98,7 @@ abstract class Enum implements \JsonSerializable
      * @return static
      * @throws \BadMethodCallException
      */
-    public static function __callStatic($name, $arguments)
+    public static function __callStatic(string $name, mixed $arguments)
     {
         $array = static::toArray();
         if (isset($array[$name])) {

@@ -7,7 +7,7 @@ abstract class DirectoryOperationTask extends AsyncIOTask
 {
 
     /** @var string */
-    protected $directory;
+    protected string $directory;
 
     public function __construct(string $directory)
     {
